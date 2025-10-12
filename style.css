@@ -1,16 +1,13 @@
-/* Definovanie tmavého módu a farieb */
 :root {
-    --body-bg: #1a1a1a;        /* Tmavé pozadie */
-    --container-bg: #2a2a2a;   /* Kontajner pozadie */
-    --accent-color: #93c54b;   /* Akcentová farba (zelená pre meškanie a tlačidlo) */
-    --text-color: #ffffff;     /* Čistá biela */
+    --body-bg: #1a1a1a;
+    --container-bg: #2a2a2a;
+    --accent-color: #93c54b;
+    --text-color: #ffffff;
     --timer-color: var(--text-color); 
     --separator-color: var(--text-color); 
 }
 
-/* Základné nastavenia */
 body {
-    /* Používa font Roboto Mono, ktorý vyzerá digitálne a čisto */
     font-family: 'Roboto Mono', monospace; 
     background-color: var(--body-bg);
     color: var(--text-color);
@@ -20,7 +17,6 @@ body {
     align-items: center;
     min-height: 100vh;
     text-align: center;
-    /* Dôležité pre správnu výšku na mobilných zariadeniach */
     height: 100dvh; 
     width: 100%;
 }
@@ -35,13 +31,11 @@ body {
     
     display: flex;
     flex-direction: column;
-    /* Udržuje tlačidlo na spodku kontajnera */
     justify-content: space-between;
     align-items: center;
     min-height: 50vh; 
 }
 
-/* Názov aktuálneho bloku */
 .block-name {
     font-size: 2.5em; 
     font-weight: 700;
@@ -52,9 +46,7 @@ body {
     padding: 0 10px;
 }
 
-/* Štýly časovača */
 .timer-display {
-    /* Responzívna veľkosť písma (clamp(min, ideálne, max)) */
     font-size: clamp(80px, 25vw, 250px); 
     font-weight: 700; 
     color: var(--timer-color);
@@ -64,7 +56,6 @@ body {
     margin-bottom: 20px; 
 }
 
-/* Štýly pre správu o meškaní */
 .delay-message {
     font-size: 1.2em;
     color: var(--accent-color); 
@@ -72,13 +63,11 @@ body {
     min-height: 1.2em; 
 }
 
-/* Špecifický štýl pre dvojbodku v časovači */
 .timer-display span.separator {
     color: var(--separator-color);
     margin: 0 0.05em; 
 }
 
-/* ŠTÝLY PRE TLAČIDLO NA PRESKOČENIE (skip-button) */
 .skip-button {
     margin-top: 30px;
     padding: 15px 30px;
@@ -99,16 +88,13 @@ body {
     color: var(--container-bg); 
 }
 
-/* Triedy na skrytie/zobrazenie ovládané JavaScriptom */
 .hidden {
-    /* Dôležité: !important zabezpečí, že skrytie prepíše iné štýly */
     display: none !important;
 }
 .visible {
     display: block;
 }
 
-/* Skrytie prepínača témy, ak sa nepoužíva */
 .theme-toggle {
     display: none; 
 }
