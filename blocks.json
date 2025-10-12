@@ -23,5 +23,20 @@
     "name": "Workshop: Vedenie tímu",
     "start": "2025-10-12T13:00:00",
     "end": "2025-10-12T14:00:00"
+  },
+  {
+    "name": "Prestávka na kávu",
+    "start": "2025-10-12T14:00:00",
+    "end": "2025-10-12T14:15:00"
+  },
+  {
+    "name": "Praktické cvičenia a simulácie",
+    "start": "2025-10-12T14:15:00",
+    "end": "2025-10-12T14:35:00"
+  },
+  {
+    "name": "Záver a spätná väzba",
+    "start": "2025-10-12T15:45:00",
+    "end": "2025-10-12T16:30:00"
   }
 ]
