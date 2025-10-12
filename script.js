@@ -4,7 +4,7 @@
 
 // Nastavenie globálneho meškania pre celý rozvrh
 // Hodnota je v minútach. Napr. 5 = meškanie 5 minút, -5 = náskok 5 minút.
-const DELAY_MINUTES = 0; // <--- NASTAV TU MEŠKANIE V MINÚTACH
+const DELAY_MINUTES = 5; // <--- NASTAV TU MEŠKANIE V MINÚTACH
 
 // ==============================================================================
 // Elementy a premenné
