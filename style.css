@@ -2,13 +2,13 @@
 :root {
     --body-bg: #1a1a1a;        /* Tmavé pozadie */
     --container-bg: #2a2a2a;   /* Kontajner pozadie */
-    --accent-color: #93c54b;   /* Akcentová farba (pre meškanie) */
+    --accent-color: #93c54b;   /* Akcentová farba (zelená pre meškanie a tlačidlo) */
     --text-color: #ffffff;     /* Čistá biela */
     --timer-color: var(--text-color); 
     --separator-color: var(--text-color); 
 }
 
-/* Nastavíme nový font Roboto Mono pre celé telo */
+/* Základné nastavenia */
 body {
     font-family: 'Roboto Mono', monospace; 
     background-color: var(--body-bg);
@@ -33,8 +33,9 @@ body {
     
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    min-height: 50vh; 
 }
 
 /* Názov aktuálneho bloku */
@@ -56,21 +57,50 @@ body {
     line-height: 1;
     white-space: nowrap; 
     margin-top: 10px;
-    margin-bottom: 20px; /* Pridáme odstup od správy o meškaní */
+    margin-bottom: 20px; 
 }
 
-/* Štýly pre správu o meškaní (NOVINKA) */
+/* Štýly pre správu o meškaní */
 .delay-message {
     font-size: 1.2em;
-    color: var(--accent-color); /* Akcentová farba, aby sa odlíšila */
+    color: var(--accent-color); 
     font-weight: 700;
-    min-height: 1.2em; /* Aby sa posun neprejavil pri zmene */
+    min-height: 1.2em; 
 }
 
 /* Špecifický štýl pre dvojbodku */
 .timer-display span.separator {
     color: var(--separator-color);
     margin: 0 0.05em; 
+}
+
+/* ŠTÝLY PRE TLAČIDLO NA PRESKOČENIE */
+.skip-button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid var(--accent-color);
+    background-color: transparent;
+    color: var(--accent-color);
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    max-width: 400px;
+}
+
+.skip-button:hover {
+    background-color: var(--accent-color);
+    color: var(--container-bg); 
+}
+
+/* Triedy na skrytie/zobrazenie ovládané JavaScriptom */
+.hidden {
+    display: none !important;
+}
+.visible {
+    display: block;
 }
 
 .theme-toggle {
