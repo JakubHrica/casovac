@@ -71,7 +71,7 @@ function updateBlockAndTimer() {
 
         if (nextBlock) {
             timeToDisplayMs = nextBlock.startDate - now;
-            blockName = "PRESTÁVKA: " + nextBlock.name;
+            blockName = "Nasleduje: " + nextBlock.name;
         } else {
             blockName = "KURZ SKONČIL";
             timeToDisplayMs = 0;
