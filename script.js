@@ -41,7 +41,7 @@ async function loadSchedule() {
     } catch (error) {
         console.error("Nastala chyba pri načítaní rozvrhu:", error);
         blockNameElement.textContent = "CHYBA NAČÍTANIA ROZVRHU";
-        timerElement.innerHTML = "00<span class=\"separator\">:</span>00"; 
+        timerElement.innerHTML = "XX<span class=\"separator\">:</span>XX";
         delayDisplayElement.textContent = "";
     }
 }
