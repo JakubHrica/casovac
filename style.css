@@ -1,0 +1,78 @@
+/* Definovanie tmavého módu a farieb */
+:root {
+    --body-bg: #1a1a1a;        /* Tmavé pozadie */
+    --container-bg: #2a2a2a;   /* Kontajner pozadie */
+    --accent-color: #93c54b;   /* Akcentová farba (pre meškanie) */
+    --text-color: #ffffff;     /* Čistá biela */
+    --timer-color: var(--text-color); 
+    --separator-color: var(--text-color); 
+}
+
+/* Nastavíme nový font Roboto Mono pre celé telo */
+body {
+    font-family: 'Roboto Mono', monospace; 
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    height: 100dvh; 
+    width: 100%;
+}
+
+.container {
+    background-color: var(--container-bg);
+    padding: 60px 30px; 
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    width: 95%; 
+    max-width: 900px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Názov aktuálneho bloku */
+.block-name {
+    font-size: 2.5em; 
+    font-weight: 700;
+    color: var(--text-color); 
+    margin-bottom: 25px; 
+    min-height: 1.2em;
+    line-height: 1.2;
+    padding: 0 10px;
+}
+
+/* Štýly časovača */
+.timer-display {
+    font-size: clamp(80px, 25vw, 250px); 
+    font-weight: 700; 
+    color: var(--timer-color);
+    line-height: 1;
+    white-space: nowrap; 
+    margin-top: 10px;
+    margin-bottom: 20px; /* Pridáme odstup od správy o meškaní */
+}
+
+/* Štýly pre správu o meškaní (NOVINKA) */
+.delay-message {
+    font-size: 1.2em;
+    color: var(--accent-color); /* Akcentová farba, aby sa odlíšila */
+    font-weight: 700;
+    min-height: 1.2em; /* Aby sa posun neprejavil pri zmene */
+}
+
+/* Špecifický štýl pre dvojbodku */
+.timer-display span.separator {
+    color: var(--separator-color);
+    margin: 0 0.05em; 
+}
+
+.theme-toggle {
+    display: none; 
+}
