@@ -110,7 +110,7 @@ function updateBlockAndTimer() {
     }));
     
     let timeToDisplayMs = 0;
-    let blockName = "MIMO ROZVRHU"; 
+    let blockName = "MIMO MATICE"; 
     let courseEnded = false;
 
     skipButton.classList.add('hidden');
@@ -135,7 +135,7 @@ function updateBlockAndTimer() {
         blockName = currentBlock.name;
 
         if (timeToDisplayMs <= 0 && currentBlockIndex === blocks.length - 1) {
-            blockName = "KURZ SKONČIL";
+            blockName = "PLÁNOVAČKA SKONČILA";
             timeToDisplayMs = 0;
             courseEnded = true;
         }
@@ -150,7 +150,7 @@ function updateBlockAndTimer() {
         }
         
     } else {
-        blockName = "KURZ SKONČIL";
+        blockName = "PLÁNOVAČKA SKONČILA";
         timeToDisplayMs = 0;
         courseEnded = true;
     }
