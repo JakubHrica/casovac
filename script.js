@@ -1,4 +1,4 @@
-const DELAY_MINUTES = 0;
+const DELAY_MINUTES = 70;
 
 const blockNameElement = document.getElementById('current-block-name');
 const timerElement = document.getElementById('simple-timer');
