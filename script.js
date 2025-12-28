@@ -51,7 +51,7 @@ function formatTime(ms) {
 
 function updateDelayMessage() {
     if (DELAY_MINUTES === 0) {
-        delayDisplayElement.textContent = "Matica beží podľa plánu";
+        delayDisplayElement.textContent = "Matica rozhodne nebeží podľa plánu";
     } else if (DELAY_MINUTES > 0) {
         delayDisplayElement.textContent = `Meškanie: +${DELAY_MINUTES} min`;
     } else {
